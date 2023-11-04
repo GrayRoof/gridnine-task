@@ -1,4 +1,4 @@
-package com.gridnine.testing.service;
+package com.gridnine.testing.filterService;
 
 import com.gridnine.testing.model.Flight;
 

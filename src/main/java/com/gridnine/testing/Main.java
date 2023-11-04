@@ -2,8 +2,8 @@ package com.gridnine.testing;
 
 import com.gridnine.testing.dao.FlightBuilder;
 import com.gridnine.testing.model.Flight;
-import com.gridnine.testing.service.FlightFilter;
-import com.gridnine.testing.service.FlightFilterImpl;
+import com.gridnine.testing.filterService.FlightFilter;
+import com.gridnine.testing.filterService.FlightFilterImpl;
 
 import java.time.LocalDateTime;
 import java.util.List;
