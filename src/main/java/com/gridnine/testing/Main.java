@@ -2,8 +2,8 @@ package com.gridnine.testing;
 
 import com.gridnine.testing.dao.FlightBuilder;
 import com.gridnine.testing.model.Flight;
-import com.gridnine.testing.service.FlightFilter;
-import com.gridnine.testing.service.FlightFilterImpl;
+import com.gridnine.testing.filterService.FlightFilter;
+import com.gridnine.testing.filterService.FlightFilterImpl;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -15,7 +15,7 @@ public class Main {
 
         List<Flight> departureBeforeNow = filter.departureBefore(LocalDateTime.now()).getResult();
         List<Flight> arrivalBeforeDeparture = filter.arrivalBeforeDeparture().getResult();
-        List<Flight> totalTransferAtLeastTwoHours = filter.totalTransferAtLeast(2).getResult();
+        List<Flight> totalTransferAtLeastTwoHours = filter.totalTransferMoreThen(2).getResult();
 
         String result = "All flights: \n" +
                 flights + "\n\n" +
