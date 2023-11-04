@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="463a0508-c684-4a2b-b17c-80793de53832" name="Changes" comment="test: create FlightBuilder tests">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/filterService/exceptions/FlightFilterException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/gridnine/testing/filterService/FlightFilterImplTest.java" afterDir="false" />
+    <list default="true" id="463a0508-c684-4a2b-b17c-80793de53832" name="Changes" comment="refactor: rename 'totalTransferAtLeast' to 't..MoreThen'">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/service/FlightFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/filterService/FlightFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/service/FlightFilterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/filterService/FlightFilterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/gridnine/testing/filterService/FlightFilterImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/gridnine/testing/filterService/FlightFilterImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,31 +67,74 @@
       <recent name="com.gridnine.testing.dao" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.gridnine.testing.Main" />
+  <component name="RunManager" selected="JUnit.All in gridnine">
+    <configuration name="All in gridnine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gridnine" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.gridnine.testing.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FlightBuilderTest.shouldCreateFlights" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FlightFilterImplTest.shouldReturnAllWhenAllSatisfiesByTotalTransferMoreThenHour" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gridnine" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.gridnine.testing.dao.*" />
+          <option name="PATTERN" value="com.gridnine.testing.filterService.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.gridnine.testing.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.gridnine.testing.dao.FlightBuilderTest" />
-      <option name="METHOD_NAME" value="shouldCreateFlights" />
+      <option name="PACKAGE_NAME" value="com.gridnine.testing.filterService" />
+      <option name="MAIN_CLASS_NAME" value="com.gridnine.testing.filterService.FlightFilterImplTest" />
+      <option name="METHOD_NAME" value="shouldReturnAllWhenAllSatisfiesByTotalTransferMoreThenHour" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FlightFilterImplTest.shouldReturnEmptyWhenNoneSatisfiesByTotalTransferMoreThenHour" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gridnine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gridnine.testing.filterService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gridnine.testing.filterService" />
+      <option name="MAIN_CLASS_NAME" value="com.gridnine.testing.filterService.FlightFilterImplTest" />
+      <option name="METHOD_NAME" value="shouldReturnEmptyWhenNoneSatisfiesByTotalTransferMoreThenHour" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FlightFilterImplTest.shouldReturnFilteredByTotalTransferAtLeast" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gridnine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gridnine.testing.filterService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gridnine.testing.filterService" />
+      <option name="MAIN_CLASS_NAME" value="com.gridnine.testing.filterService.FlightFilterImplTest" />
+      <option name="METHOD_NAME" value="shouldReturnFilteredByTotalTransferAtLeast" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FlightFilterImplTest.shouldThrowExceptionWhenTryFilterByTotalTransferAtLeastWithNullSegments" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gridnine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gridnine.testing.filterService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gridnine.testing.filterService" />
+      <option name="MAIN_CLASS_NAME" value="com.gridnine.testing.filterService.FlightFilterImplTest" />
+      <option name="METHOD_NAME" value="shouldThrowExceptionWhenTryFilterByTotalTransferAtLeastWithNullSegments" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -102,8 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.FlightBuilderTest.shouldCreateFlights" />
+        <item itemvalue="JUnit.All in gridnine" />
+        <item itemvalue="JUnit.FlightFilterImplTest.shouldReturnAllWhenAllSatisfiesByTotalTransferMoreThenHour" />
+        <item itemvalue="JUnit.FlightFilterImplTest.shouldReturnEmptyWhenNoneSatisfiesByTotalTransferMoreThenHour" />
+        <item itemvalue="JUnit.FlightFilterImplTest.shouldReturnFilteredByTotalTransferAtLeast" />
+        <item itemvalue="JUnit.FlightFilterImplTest.shouldThrowExceptionWhenTryFilterByTotalTransferAtLeastWithNullSegments" />
       </list>
     </recent_temporary>
   </component>
@@ -144,7 +187,42 @@
       <option name="project" value="LOCAL" />
       <updated>1699119080385</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="refactor: rename package 'service' to 'filterService'">
+      <created>1699125711548</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1699125711548</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: create FlightFilterException">
+      <created>1699125748957</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1699125748957</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat: add FlightFilterException call">
+      <created>1699125851498</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1699125851498</updated>
+    </task>
+    <task id="LOCAL-00008" summary="test: create FlightFilterImplTest">
+      <created>1699125935162</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1699125935162</updated>
+    </task>
+    <task id="LOCAL-00009" summary="refactor: rename 'totalTransferAtLeast' to 't..MoreThen'">
+      <created>1699131020183</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1699131020183</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -190,6 +268,11 @@
     <MESSAGE value="feat: create FlightFilter" />
     <MESSAGE value="feat: create Main class" />
     <MESSAGE value="test: create FlightBuilder tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="test: create FlightBuilder tests" />
+    <MESSAGE value="refactor: rename package 'service' to 'filterService'" />
+    <MESSAGE value="feat: create FlightFilterException" />
+    <MESSAGE value="feat: add FlightFilterException call" />
+    <MESSAGE value="test: create FlightFilterImplTest" />
+    <MESSAGE value="refactor: rename 'totalTransferAtLeast' to 't..MoreThen'" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: rename 'totalTransferAtLeast' to 't..MoreThen'" />
   </component>
 </project>
