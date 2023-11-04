@@ -7,6 +7,7 @@ import java.util.List;
 
 public interface FlightFilter {
 
+
     List<Flight> getResult();
     FlightFilter departureBefore(LocalDateTime dateTime);
     FlightFilter arrivalBeforeDeparture();
