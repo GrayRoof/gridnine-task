@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="463a0508-c684-4a2b-b17c-80793de53832" name="Changes" comment="feat: create Main class">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/gridnine/testing/dao/FlightBuilderTest.java" afterDir="false" />
+    <list default="true" id="463a0508-c684-4a2b-b17c-80793de53832" name="Changes" comment="test: create FlightBuilder tests">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/filterService/exceptions/FlightFilterException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/gridnine/testing/filterService/FlightFilterImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/service/FlightFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/service/FlightFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/service/FlightFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/filterService/FlightFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/service/FlightFilterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/filterService/FlightFilterImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -64,10 +66,11 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.gridnine.testing.service" />
       <recent name="com.gridnine.testing.dao" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FlightBuilderTest.shouldCreateFlights">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.gridnine.testing.Main" />
       <module name="gridnine" />
@@ -99,8 +102,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FlightBuilderTest.shouldCreateFlights" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.FlightBuilderTest.shouldCreateFlights" />
       </list>
     </recent_temporary>
   </component>
@@ -134,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698964846759</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="test: create FlightBuilder tests">
+      <created>1699119080385</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1699119080385</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -179,6 +189,7 @@
     <MESSAGE value="initial" />
     <MESSAGE value="feat: create FlightFilter" />
     <MESSAGE value="feat: create Main class" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: create Main class" />
+    <MESSAGE value="test: create FlightBuilder tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="test: create FlightBuilder tests" />
   </component>
 </project>
