@@ -11,6 +11,6 @@ public interface FlightFilter {
     List<Flight> getResult();
     FlightFilter departureBefore(LocalDateTime dateTime);
     FlightFilter arrivalBeforeDeparture();
-    FlightFilter totalTransferAtLeast(long hours);
+    FlightFilter totalTransferMoreThen(long hours);
 
 }

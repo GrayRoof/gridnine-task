@@ -7,6 +7,7 @@ import com.gridnine.testing.model.Segment;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Objects;
 import java.util.stream.Collectors;
 
 public class FlightFilterImpl implements FlightFilter {
@@ -43,7 +44,7 @@ public class FlightFilterImpl implements FlightFilter {
     }
 
     @Override
-    public FlightFilter totalTransferAtLeast(long hours) {
+    public FlightFilter totalTransferMoreThen(long hours) {
         List<Flight> filtered = initialFlights.stream()
                 .filter(flight -> getTotalTransferTime(segmentsOf(flight)) > hours)
                 .collect(Collectors.toList());
@@ -70,5 +71,18 @@ public class FlightFilterImpl implements FlightFilter {
                     + "has NULL list of segments.");
         }
         return flight.getSegments();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof FlightFilterImpl)) return false;
+        FlightFilterImpl that = (FlightFilterImpl) o;
+        return Objects.equals(initialFlights, that.initialFlights);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(initialFlights);
     }
 }
